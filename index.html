@@ -470,38 +470,36 @@
       particlesJS("particles-js", {
         "particles": {
           "number": {
-            "value": 60,
+            "value": 100, // More dots
             "density": {
               "enable": true,
               "value_area": 800
             }
           },
-          "color": { "value": "#ffffff" },
+          "color": {
+            "value": "#ffffff" // White dots
+          },
           "shape": {
             "type": "circle",
-            "stroke": { "width": 0, "color": "#000000" },
-            "polygon": { "nb_sides": 5 }
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
           },
           "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": { "enable": false }
+            "value": 1,
+            "random": false
           },
           "size": {
-            "value": 3,
-            "random": true,
-            "anim": { "enable": false }
+            "value": 1.5,
+            "random": true
           },
           "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
+            "enable": true // No connecting lines
           },
           "move": {
             "enable": true,
-            "speed": 0.5,
+            "speed": 1.5, // Smooth and slow
             "direction": "none",
             "random": false,
             "straight": false,
@@ -511,18 +509,15 @@
         "interactivity": {
           "detect_on": "canvas",
           "events": {
-            "onhover": { "enable": true, "mode": "grab" },
-            "onclick": { "enable": true, "mode": "push" },
+            "onhover": { "enable": false },
+            "onclick": { "enable": false },
             "resize": true
-          },
-          "modes": {
-            "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
-            "push": { "particles_nb": 4 }
           }
         },
         "retina_detect": true
       });
     </script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
