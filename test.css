@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  padding: 40px;
+}
+
+.text-block {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.text-block h1 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-block span {
+  display: block;
+  color: #ffffff;
+}
+
+.text-block p {
+  margin-top: 15px;
+  letter-spacing: 4px;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.learn-more {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+  color: #ccc;
+}
+
+.image-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://i.imgur.com/Kn5qS6g.png') no-repeat center center;
+  background-size: cover;
+  mix-blend-mode: lighten;
+  z-index: 1;
+}

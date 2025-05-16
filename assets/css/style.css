@@ -21,10 +21,12 @@
   --contrast-color: #ffffff;
   --contrast-color-rgb: 255, 255, 255;
 }
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
+
 h1,
 h2,
 h3,
@@ -33,30 +35,37 @@ h5,
 h6 {
   color: #1e1e1e;
 }
+
 a {
   color: #1e1e1e;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
+
 a:hover {
   color: #0078ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
+
 .p-r {
   position: relative;
 }
+
 .color-a {
   text-decoration: none;
   color: #0078ff;
 }
+
 .color-d {
   color: #f5f5f5;
 }
+
 .color-text-a {
   text-decoration: none;
   color: #4e4e4e;
 }
+
 .box-shadow,
 .card-blog,
 .work-box,
@@ -64,41 +73,49 @@ a:hover {
 .paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
+
 .box-shadow-a,
 .button:hover {
   text-decoration: none;
   box-shadow: 0 0 0 4px #cde1f8;
 }
+
 .display-5 {
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.1;
 }
+
 .display-6 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.1;
 }
+
 .avatar {
   width: 32px;
   height: 32px;
   margin-right: 4px;
   overflow: hidden;
 }
+
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
+
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
   }
 }
+
 .overlay-mf {
   background-color: #0078ff;
 }
+
 .overlay-mf {
   position: absolute;
   top: 0;
@@ -108,45 +125,55 @@ a:hover {
   width: 100%;
   opacity: 0.7;
 }
+
 .paralax-mf {
   position: relative;
   padding: 8rem 0;
 }
+
 .display-table {
   width: 100%;
   height: 100%;
   display: table;
 }
+
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
+
 /*--/ Sections /--*/
 .sect-4 {
   padding: 4rem 0;
 }
+
 .sect-pt4 {
   padding-top: 4rem;
 }
+
 .sect-mt4 {
   margin-top: 4rem;
 }
+
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
 }
+
 /*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
 }
+
 .title-a {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .subtitle-a {
   text-decoration: none;
   color: #4e4e4e;
@@ -397,7 +424,7 @@ a:hover {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
-  
+
 }
 
 @media (max-width: 991px) {
@@ -539,6 +566,7 @@ a:hover {
   color: #fff;
   background-color: #0563bb;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -583,16 +611,16 @@ a:hover {
   color: transparent;
   position: relative;
   display: inline-block;
-  background: linear-gradient(74deg,#4382eb 0,#9b72cb 9%,#d96570 20%,#ea6a77 24%,#a176d4 35%,#57f737 44%,#a57bd7 50%,#de6873 56%,#0f0f10 75%,#0f0f10 100%);
-    background-size: 400% 100%;
-    background-clip: text; 
-    
+  background: linear-gradient(74deg, #4382eb 0, #9b72cb 9%, #d96570 20%, #ea6a77 24%, #a176d4 35%, #57f737 44%, #a57bd7 50%, #de6873 56%, #0f0f10 75%, #0f0f10 100%);
+  background-size: 400% 100%;
+  background-clip: text;
+
 }
 
 @media (min-width: 768px) {
   .hero .hero-subtitle {
-   font-size: 24px;
-   font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 
@@ -797,7 +825,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 28px;
   transition: ease-in-out 0.3s;
   position: absolute;
@@ -830,7 +858,7 @@ a:hover {
 }
 
 .services .service-item:hover .details .icon i {
-  color:#0ea2bd;
+  color: #0ea2bd;
 
 }
 
@@ -928,19 +956,19 @@ a:hover {
   border-color: #df1529;
 }
 
- .php-email-form input[type=text]::-moz-placeholder,
- .php-email-form input[type=email]::-moz-placeholder,
- .php-email-form textarea::-moz-placeholder {
+.php-email-form input[type=text]::-moz-placeholder,
+.php-email-form input[type=email]::-moz-placeholder,
+.php-email-form textarea::-moz-placeholder {
   color: rgba(255, 255, 255), 0.3;
 }
 
- .php-email-form input[type=text]::placeholder,
- .php-email-form input[type=email]::placeholder,
- .php-email-form textarea::placeholder {
+.php-email-form input[type=text]::placeholder,
+.php-email-form input[type=email]::placeholder,
+.php-email-form textarea::placeholder {
   color: rgba(255, 255, 255), 0.3;
 }
 
- .php-email-form button[type=submit] {
+.php-email-form button[type=submit] {
   background: #e84545;
   color: #ffffff;
   border: 0;
@@ -949,7 +977,7 @@ a:hover {
   border-radius: 4px;
 }
 
- .php-email-form button[type=submit]:hover {
+.php-email-form button[type=submit]:hover {
   background: rgba(232, 69, 69), 0.8;
 }
 
@@ -961,4 +989,39 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Background layer */
+  top: 0;
+  left: 0;
+}
+
+.overlay-itro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* optional dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  /* On top of particles and overlay */
+  color: #fff;
+  /* ensure text is white */
 }
