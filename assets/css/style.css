@@ -16,10 +16,17 @@
 
 body {
   background: radial-gradient(circle at 20% 20%, #111111, #000000);
-
+  overflow-x: hidden !important;
   color: #4e4e4e;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Inter", sans-serif;
 }
+
+html,
+body {
+
+  overflow-x: hidden;
+}
+
 
 * {
   margin: 0;
@@ -243,7 +250,6 @@ a:hover {
   color: #0563bb;
   line-height: 1;
 
-  margin-right: 10px;
   transition: 0.3s;
 }
 
@@ -780,7 +786,6 @@ a:hover {
 .recent-posts .post-author-img {
   width: 50px;
   border-radius: 50%;
-  margin-right: 15px;
 }
 
 .recent-posts .post-author {
@@ -1050,4 +1055,213 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
   opacity: 1;
   transform: none;
+}
+
+
+
+.bio {
+  background-color: var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17));
+ 
+
+  will-change: transform;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+  opacity: 1;
+  transform: none;
+  border-radius: 24px;
+  padding: 2rem;
+  color: white;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card-custom img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.status {
+  color: #4aff4a;
+  font-size: 0.9rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.title {
+  color: #5b9dff;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.socials i {
+
+  font-size: 1.2rem;
+  color: white;
+}
+
+.connect-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background: #2e2e2e;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bio h2 {
+  font-size: 2rem;
+}
+
+.bio p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.tags .badge {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  margin: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.experience-row {
+  background: #141414;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.expert-badge {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+  .container.hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-custom,
+  .bio {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .experience-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+.screenshot-container {
+  max-width: 350px;
+  border-radius: 20px;
+  background-color: rgb(17, 17, 17);
+  box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+  padding: 16px;
+  text-align: center;
+
+}
+
+.screenshot-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+.step-box {
+  background-color: var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17));
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  will-change: transform;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+  opacity: 1;
+  transform: none;
+}
+
+.step-box .heading {
+  color: rgb(255, 255, 255);
+}
+
+.step-box:hover {
+  transform: translateY(-5px);
+}
+
+.step-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.step-box .subtitle {
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  text-decoration-color: rgb(255, 255, 255);
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-family: "Inter", "Inter Placeholder", sans-serif !important;
+}
+
+.step-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10));
+  border-radius: 100px;
+  box-shadow: rgba(184, 180, 180, 0.14) 0px 2px 0px 0px inset;
+  opacity: 1;
+  color: #fff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
