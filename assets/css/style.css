@@ -28,15 +28,6 @@ body {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #1e1e1e;
-}
-
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -569,8 +560,9 @@ a:hover {
 }
 
 .mobile-nav-toggle {
-    color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, .6);
 }
+
 .mobile-nav-active {
   overflow: hidden;
 }
@@ -630,13 +622,13 @@ a:hover {
 
 .hero .hero-title {
   color: #fff;
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 45px;
 }
 
 @media (max-width: 768px) {
   .hero .hero-title {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 400;
 
   }
@@ -724,7 +716,7 @@ a:hover {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+
 }
 
 .skills .progress .skill .val {
@@ -732,14 +724,18 @@ a:hover {
   font-style: normal;
 }
 
+.skills .section-title {
+  color: white;
+}
+
 .skills .progress-bar-wrap {
   background: #dce8f8;
-  height: 10px;
+  height: 5px;
 }
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 5px;
   transition: 0.9s;
   background-color: #149ddd;
 }
@@ -762,7 +758,6 @@ a:hover {
 
 .recent-posts .post-category {
   font-size: 16px;
-  color: rgba(var(--default-color-rgb), 0.5);
   margin-bottom: 10px;
 }
 
@@ -1046,4 +1041,13 @@ a:hover {
     font-size: 0.75rem;
     padding: 6px 16px;
   }
+}
+
+.project-card {
+  background-color: rgb(17, 17, 17);
+  will-change: transform;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+  opacity: 1;
+  transform: none;
 }
