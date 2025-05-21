@@ -445,7 +445,8 @@ a:hover {
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: #050d18;
+    box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+
     left: -300px;
   }
 }
