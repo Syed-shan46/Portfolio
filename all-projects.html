@@ -20,11 +20,15 @@
             font-family: 'Segoe UI', sans-serif;
         }
 
+        .quote-section .heading {
+            font-weight: 100;
+        }
+
         .badge {
             display: inline-block;
             background: #1a1a1a;
             color: #fff;
-            padding: 6px 14px;
+            padding: 8px 14px;
             border-radius: 99px;
             font-size: 14px;
             margin-bottom: 24px;
@@ -47,7 +51,7 @@
         .cta-button {
             background: linear-gradient(to bottom, #f0f0f0, #cccccc);
             color: #000;
-            padding: 14px 32px;
+            padding: 8px 32px;
             border: none;
             border-radius: 999px;
             font-size: 16px;
@@ -64,9 +68,59 @@
 
 <body>
 
+
+    <!-- ======= Header ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link scrollto active">
+                        <i class="bi bi-house-door-fill"></i><span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#recent" class="nav-link scrollto">
+                        <i class="bi bi-briefcase-fill"></i><span>Recent Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bio" class="nav-link scrollto">
+                        <i class="bi bi-person-badge-fill"></i><span>Bio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#process" class="nav-link scrollto">
+                        <i class="bi bi-diagram-3-fill"></i><span>Process</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link scrollto">
+                        <i class="bi bi-envelope-fill"></i><span>Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+    </header><!-- End Header -->
+
+    <div class="container mt-5">
+        <div class="breadcrumbs">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
     <section class="quote-section">
         <div class="badge">⦿ Recent Projects</div>
-        <h1>Designing with Purpose<br><span> Build with Impact</span></h1>
+        <h1 class="heading">Designing with Purpose<br><span> Build with Impact</span></h1>
         <button class="cta-button">Contact Now</button>
     </section>
 
@@ -84,31 +138,31 @@
                 </a>
             </div>
 
-            <div class="screenshot-container col-lg-4 col-lg-4">
+            <!-- <div class="screenshot-container col-lg-4 col-lg-4 ms-sm-3">
                 <a href="toggler-detail.html">
                     <div class="preview-wrapper">
                         <img src="assets/img/toggle-1.png" alt="Project Preview">
                         <div class="arrow-icon">
                             <i class="bi bi-arrow-up-right"></i>
-                            <!-- Bootstrap icon -->
+
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="screenshot-container col-lg-4 col-lg-4">
+            <div class="screenshot-container col-lg-4 col-lg-4 ms-sm-3">
                 <a href="flutter-web-clone-detail.html">
                     <div class="preview-wrapper">
                         <img src="assets/img/flutter-img.png" alt="Project Preview">
                         <div class="arrow-icon">
                             <i class="bi bi-arrow-up-right"></i>
-                            <!-- Bootstrap icon -->
+
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
 
-            
+
 
         </div>
     </section>
