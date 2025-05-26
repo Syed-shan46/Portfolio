@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Screenshots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        .main-image {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 9 / 16;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 0px solid #444;
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+
+        .thumbnail-img {
+            width: 80px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: 0.2s;
+        }
+
+        .thumbnail-img.active,
+        .thumbnail-img:hover {
+            border-color: #0dcaf0;
+        }
+
+        .thumbnails-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 10px;
+        }
+
+        .thumbnail-item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Scrollbar styling (optional) */
+        .thumbnails-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .thumbnails-wrapper::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h2 class="mb-4">App Images</h2>
+        <img src="assets/img/app-images/app-img (1).png" id="mainImage" class="main-image" alt="Main Screenshot">
+
+        <div class="thumbnails-wrapper mt-3">
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (1).png" class="thumbnail-img active"
+                    onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (2).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (3).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (4).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (5).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (6).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (7).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (8).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (9).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+            <div class="thumbnail-item">
+                <img src="assets/img/app-images/app-img (10).png" class="thumbnail-img" onclick="changeImage(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional but recommended for some components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function changeImage(el) {
+            document.getElementById("mainImage").src = el.src;
+
+            // Update active thumbnail
+            document.querySelectorAll(".thumbnail-img").forEach(img => img.classList.remove("active"));
+            el.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
