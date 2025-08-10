@@ -61,59 +61,238 @@
             background-color: #555;
             border-radius: 10px;
         }
+
+        .custom-tabs {
+            border-bottom: 2px solid #333;
+            /* bottom line for the whole tab area */
+        }
+
+        .custom-tabs .nav-link {
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #aaa;
+            background: transparent;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .custom-tabs .nav-link:hover {
+            color: #fff;
+            border-bottom-color: #666;
+        }
+
+        .custom-tabs .nav-link.active {
+            color: #0dcaf0;
+            /* highlight color */
+            border-bottom-color: #0dcaf0;
+            background: transparent;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container text-center">
-        <h2 class="mb-4">App Images</h2>
-        <img src="assets/img/app-images/app-img (1).png" id="mainImage" class="main-image" alt="Main Screenshot">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs justify-content-center mb-4 custom-tabs" id="modeTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="dark-tab" data-bs-toggle="tab" data-bs-target="#dark" type="button"
+                    role="tab">Dark Mode</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="light-tab" data-bs-toggle="tab" data-bs-target="#light" type="button"
+                    role="tab">Light Mode</button>
+            </li>
+        </ul>
 
-        <div class="thumbnails-wrapper mt-3">
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (1).png" class="thumbnail-img active"
-                    onclick="changeImage(this)">
+        <!-- Tabs Content -->
+        <div class="tab-content">
+
+            <!-- Dark Mode Section -->
+            <div class="tab-pane fade show active" id="dark" role="tabpanel">
+                <img src="assets\img\app-images\dark\home_dark.png" id="mainImageDark" class="main-image"
+                    alt="Main Screenshot Dark">
+
+                <div class="thumbnails-wrapper mt-3">
+                    <div class="thumbnail-item">
+                        <img src="assets\img\app-images\dark\home_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets\img\app-images\dark\onboarding1_dark.png" class="thumbnail-img"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets\img\app-images\dark\onboarding2_dark.png" class="thumbnail-img"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets\img\app-images\dark\onboarding3_dark.png" class="thumbnail-img"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets\img\app-images\dark\register_dark.png" class="thumbnail-img"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/login_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/notification_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/product_detail_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/image_view_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/rating_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/wishlist_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/cart_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/checkout_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/orders_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/order_detail_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/search_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/search_detail_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/filter_sheet_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/dark/appearance_dark.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageDark')">
+                    </div>
+                </div>
             </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (2).png" class="thumbnail-img" onclick="changeImage(this)">
+
+            <!-- Light Mode Section -->
+            <div class="tab-pane fade" id="light" role="tabpanel">
+                <img src="assets/img/app-images/light/home_light.png" id="mainImageLight" class="main-image"
+                    alt="Main Screenshot Light">
+
+                <div class="thumbnails-wrapper mt-3">
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/home_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/onboarding1_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/onboarding2_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/onboarding3_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/register_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/login_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/notification_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/product_detail_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/image_view_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/rating_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/wishlist_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/cart_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/checkout_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/orders_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/order_detail_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/search_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/search_result_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/filter_sheet_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="assets/img/app-images/light/appearance_light.png" class="thumbnail-img active"
+                            onclick="changeImage(this, 'mainImageLight')">
+                    </div>
+
+                </div>
             </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (3).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (4).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (5).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (6).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (7).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (8).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (9).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
-            <div class="thumbnail-item">
-                <img src="assets/img/app-images/app-img (10).png" class="thumbnail-img" onclick="changeImage(this)">
-            </div>
+
         </div>
     </div>
 
-    <!-- Bootstrap JS (optional but recommended for some components) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function changeImage(el) {
-            document.getElementById("mainImage").src = el.src;
+        function changeImage(el, targetId) {
+            document.getElementById(targetId).src = el.src;
 
-            // Update active thumbnail
-            document.querySelectorAll(".thumbnail-img").forEach(img => img.classList.remove("active"));
+            // Update active thumbnail in this section only
+            el.closest('.thumbnails-wrapper').querySelectorAll(".thumbnail-img").forEach(img => img.classList.remove("active"));
             el.classList.add("active");
         }
     </script>
